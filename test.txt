@@ -6,3 +6,8 @@ source /opt/ros/foxy/setup.bash
 source /f1tenth_ws/install/setup.bash
 
 ros2 launch f1tenth_stack bringup_launch.py
+
+ros2 launch ldlidar ldlidar.launch.py
+
+ros2 launch f1tenth_stack urdf_robot_publisher.launch.py
+ros2 launch f1tenth_stack robot_localization.launch.py
